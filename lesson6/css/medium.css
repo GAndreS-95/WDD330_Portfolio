@@ -1,0 +1,45 @@
+@media only screen and (min-width: 35rem) {
+
+    header {justify-content: flex-start;}
+
+    header img {width: 4.5rem;}
+    header h1 {font-size: 2rem;}
+    header h2 {font-size: 1.5rem;}
+
+    nav button {display: none;}
+    nav ul.hide {display: block;}
+
+    nav ul {margin-left: 2%;}
+    nav ul li {float: left;}
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+    } 
+
+    nav ul li.gallery a {border: none;}
+
+    main h1 {text-align: start; margin-left: 1%;}
+
+    /*FORECAST*/
+    section.forecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    section.forecast div {
+        text-align: center;
+        border: 1px solid #273B4E;
+    }
+    section.forecast div h3 {
+        background-color: #FFCF24;
+        margin: 0;
+        padding: 1rem 0;
+    }
+    
+    div.mapouter {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+     
+}

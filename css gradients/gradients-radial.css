@@ -1,0 +1,11 @@
+#radial-gradients {
+    height: 350px;
+    width: 500px;
+    background-image: radial-gradient(circle, pink, black, purple);
+}
+
+#repeating-radial-gradients {
+    height: 350px;
+    width: 500px;
+    background-image: repeating-radial-gradient( red, yellow 10%, green 15%);
+}

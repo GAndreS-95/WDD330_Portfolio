@@ -1,0 +1,138 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+    background-color: #EBEBEB;
+}
+
+/*Banner Message*/
+div#banner {
+    background-color: #FFCF24;
+    color: #273B4E;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Itim', cursive;
+
+}
+div.showme {display: block;}
+div.hideme {display: none;}
+
+
+div#headerWrapper {background-color: #105070;}
+header{
+    padding: .5rem 2%;
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/*
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+*/
+header img {
+    justify-content: flex-start;
+    margin-right: 10px; 
+    width: 3rem;
+}
+header h1 { 
+    margin: 0; 
+    font-size: 1.3rem;
+    color:#FFCF24;
+}
+header h2 { 
+    margin: 0; 
+    font-size: 1rem;
+    font-weight: normal; 
+    color:#FFCF24
+}
+
+/*NAVIGATION*/
+div#navWrapper {background-color: #FFCF24;}
+nav {font-family: 'Itim', cursive;}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #105070;
+}
+nav button:hover {
+    background-color: #90C9F5;
+    color: #273B4E;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #105070;
+    padding: .8rem 2%;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #90C9F5;
+    color: #273B4E;
+}
+
+nav ul li.active a{
+    background-color: #273B4E;
+    color: #EBEBEB;
+}
+
+nav ul.hide {display:none;}
+
+
+
+/*MAIN*/
+.gallery picture, h1, figcaption{
+    display: grid;
+    margin: auto;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.gallery img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+.gallery img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+  img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+div#footerWrapper {background-color: #105070;}
+footer {
+    font-family: 'Itim', cursive;
+    color: #FFCF24;
+    padding: .5rem 2%;
+    text-align: center; 
+}
+
+/*----- class= Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: flex;
+    clear: both;
+  }

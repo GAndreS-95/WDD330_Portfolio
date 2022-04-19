@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gene Sunglao">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="City Page">
+
+        <title>City Page | San Juan Chamber of Commerce</title>
+        <link rel="shortcut icon" href="images/faviconSJ.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@300&family=Play:wght@700&family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normlize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+    <body>
+        <!--HEADER-->
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <img src="images/SJ_CoC_logo.png" alt="SJ Commerce Logo">
+                <div class="headings">
+                    <h1>San Juan <br>Chamber of Commerce</h1>
+                    <h2><em>Where business means opportunities</em></h2>
+                </div>
+            </header>
+        </div>
+
+        <!--NAVIGATION-->
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="sj-city.html"><em>San Juan City</em></a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="form-joinus.html">Join Us</a></li>
+                    <li><a href="info-contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <main class="clearfix">
+            <div class="city_main">
+            <h1>San Juan City</h1>
+
+            <p>San Juan, formerly known as San Juan del Monte, is a landlocked highly urbanized city in the National Capital Region.</p>
+            <p>The city has a land area of 5.95 square kilometers or 2.30 square miles. Its population as determined by the 2015 Census was 122,180. This represented 0.95% of the total population of the National Capital Region. Based on these figures, the population density is computed at 20,534 inhabitants per square kilometer or 53,122 inhabitants per square mile.</p>
+
+            <h2>Economy</h2>
+            <p>According to the Bureau of Local Government Finance, the annual regular revenue of San Juan for the fiscal year of 2016 was ₱1,423,198,181.30.</p>
+            <div class=economy>
+                <figure>
+                    <img src="images/annualreg_income_chart.png" alt="annual regular income chart">
+                    <figcaption>Annual Regular Income - Chart</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/annualreg_income_graph.png" alt="annual regular income graph">
+                    <figcaption>Annual Regular Income - Graph</figcaption>
+                </figure>
+            </div>
+
+            <h2>Demographics</h2>
+            <p>According to the 2015 Census, the age group with the highest population in San Juan is 20 to 24, with 13,663 individuals. Conversely, the age group with the lowest population is 75 to 79, with 1,134 individuals.</p>
+            <p>Combining age groups together, those aged 14 and below, consisting of the the young dependent population which include infants/babies, children and young adolescents/teenagers, make up an aggregate of 22.77% (27,817). Those aged 15 up to 64, roughly, the economically active population and actual or potential members of the work force, constitute a total of 71.77% (87,693). Finally, old dependent population consisting of the senior citizens, those aged 65 and over, total 5.46% (6,670) in all.</p>
+            <p>The computed Age Dependency Ratios mean that among the population of San Juan, there are 32 youth dependents to every 100 of the working age population; there are 8 aged/senior citizens to every 100 of the working population; and overall, there are 39 dependents (young and old-age) to every 100 of the working population.</p>
+            <p>The median age of 28 indicates that half of the entire population of San Juan are aged less than 28 and the other half are over the age of 28.</p>
+            <figure class="demographic">
+                <img src="images/age_demographic.png" alt="age demographic chart">
+                <figcaption>Age Demographic Chart</figcaption>
+            </figure>
+
+            <h2>City Events</h2>
+            <div class="events_sj">
+                <div class="event1">
+                    <img src="images/event1.jpg" alt="food safety seminar">
+                    <button class="external-button" onclick="location.href='https://sanjuancity.gov.ph/sanjuan/pid/public/contents/news/104'">Click here to view more</button>
+                </div>
+                <div class="event2">
+                    <img src="images/event2.jpg" alt="Bread and Pastry Production">
+                    <button class="external-button" onclick="location.href='https://sanjuancity.gov.ph/sanjuan/pid/public/contents/news/105'">Click here to view more</button>
+                </div>
+            </div>
+            </div>
+        </main>
+
+
+        <!--Footer-->
+        <div id="footerWrapper">
+            <footer>
+                &copy; Gene Sunglao | WDD 230 | Chamber of Commerce Final Project  
+                <div class="date"></div>
+            </footer>
+        </div>
+
+        <script src="js/hamburger.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontload.js"></script>
+    </body>    
+</html>

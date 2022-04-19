@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gene Sunglao">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Lesson 4: Assignment: Preston Town Page">
+
+        <title>Preston Town | Weathered Out</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Itim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normlize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+    <body>
+        <div id="banner" class="showme">Saturday = Preston Pancakes in the Park!  
+            9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <img src="images/weathered_out_icon.png" alt="Storm Icon">
+                <section class="headings">
+                    <h1>Weathered Out</h1>
+                    <h2>Your handy weather forcaster</h2>
+                </section>
+            </header>
+        </div>
+
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="lesson6/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--MAIN START-->
+        <main class="clearfix">
+            <h1>Storm Center</h1>
+
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label class="top">*Full Name: <input type="text" name="name" pattern="[A-Za-z]{2,} [A-Za-z]{2,}" minlength="2" required></label>
+                    <label class="top">*Email: <input type="email" name="email" placeholder="youremail@xmail.com"></label>
+                    <label class="top">*Phone: <input type="tel" name="phone" required></label>
+                    <label class="top">*Zip Code: <input type="number" name="zip" required></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date: <input type="date" name="date"></label>
+                    <label class="top">Storm Type: <input list="storms" name="type"></label>
+                    <datalist id="storms">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>                        
+                    </datalist>                    
+                    <label class="sbs1">Storm Severity (1-10) <input type="range" name="severity" min="1" max="10" value="5" step="1"></label>
+                    <label class="top">Storm Region: 
+                        <select name="region">
+                            <option value=""> Select Region </option>
+                            <option value="preston">Preston</option>
+                            <option value="sodaspring">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <div class="top">Are you in danger?</div>
+                    <label class="sbs"> Yes <input type="radio" name="level" value="yes"></label>
+                    <label class="sbs"> No <input type="radio" name="level" value="no"></label>
+                    <label class="sbs"> Maybe <input type="radio" name="level" value="maybe"></label>
+                    <label class="top">Additional information of comments: <textarea name="additional"></textarea></label>
+                    <input type="submit" value="Report Storm" class="btn">                    
+                </fieldset>
+            </form>          
+        </main>
+        <!--MAIN END-->
+
+
+        <div id="footerWrapper">
+            <footer>
+                &copy; Gene Sunglao | WDD 230 | Weather Site Project   
+                <div class="date"></div>
+            </footer>
+        </div>
+        <script src="js/scripts.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script type="text/javascript" src="js/lazyload.js"></script>
+    </body>
+</html>

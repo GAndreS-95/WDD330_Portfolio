@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Source+Sans+Pro&display=swap');
+
+body {
+    max-width: 990px;
+    margin: 0 auto;
+    background-color: #1A1A1A;
+}
+
+h1, ul {
+    font-family: 'New Tegomin', serif;
+}
+
+h1 {
+    padding: 10px;
+    margin-right: -15px;
+    font-size: 2.5em;
+}
+
+h2, p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+header, footer {
+    background-color: #FF6A00;
+    color: black;
+    border: 1px solid;
+    text-align: center;
+}
+
+header img {
+    width: 225px;
+    height: auto;
+    margin: 15px;
+}
+
+ul a{
+    color: #ff7700;
+  }
+  /* Link Interactions*/
+ul a:hover {
+    background-color: #ff7700;
+    color: #333333;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }

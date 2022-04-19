@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gene Sunglao">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Lesson 4: Assignment: Preston Town Page">
+
+        <title>Preston Town | Weathered Out</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Itim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normlize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+    <body>
+        <div id="banner" class="showme">Saturday = Preston Pancakes in the Park!  
+            9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <img src="images/weathered_out_icon.png" alt="Storm Icon">
+                <section class="headings">
+                    <h1>Weathered Out</h1>
+                    <h2>Your handy weather forcaster</h2>
+                </section>
+            </header>
+        </div>
+
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="lesson6/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--MAIN START-->
+        <main class="clearfix">
+            <h1>Wireframes</h1>
+
+            <div class="gallery">
+                <picture class="pic1">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images/wireframe-small.jpg" 
+                    alt="wireframe small size">
+                    <figcaption>Small</figcaption>
+                </picture>
+
+                <picture class="pic2">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images/wireframe-medium.jpg" 
+                    alt="wireframe medium size">
+                    <figcaption>Medium</figcaption>
+                </picture>
+
+                <picture class="pic3">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images/wireframe-large.jpg" 
+                    alt="wireframe large size">
+                    <figcaption>Large</figcaption>
+                </picture>
+            </div>            
+        </main>
+        <!--MAIN END-->
+
+
+        <div id="footerWrapper">
+            <footer>
+                &copy; Gene Sunglao | WDD 230 | Weather Site Project   
+                <div class="date"></div>
+            </footer>
+        </div>
+        <script src="js/scripts.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script type="text/javascript" src="js/lazyload.js"></script>
+    </body>
+</html>

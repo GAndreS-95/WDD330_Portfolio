@@ -1,0 +1,11 @@
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    section.weatherforecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

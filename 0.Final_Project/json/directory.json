@@ -1,0 +1,53 @@
+{
+  "directory" : [
+    {
+      "name" : "Greenhills Shopping Center",
+      "logo" : "greenhills.png",
+      "address" : "Ortigas Avenue, San Juan, Metro Manila, Philippines",
+      "phone" : "(02) 721-0572",
+      "website" : "http://www.greenhills.com.ph"
+    },
+    {
+      "name" : "Promocentral Inc.",
+      "logo" : "promocentral.jpeg",
+      "address" : "3/flr. Promenade Bldg, 198 Wilson st. cor. P. Guevarra San Juan, Metro Manila, San Juan, Metro Manila, Philippines",
+      "phone" : "02 7210244",
+      "website" : "http://www.promocentral.net"
+    },
+    {
+      "name" : "Dealspot Philippines",
+      "logo" : "dealspot.jpeg",
+      "address" : "18-D #10 Eisenhower St. Greenhills San Juan City, San Juan, Metro Manila, Philippines",
+      "phone" : "7275325",
+      "website" : "http://www.dealspot.ph"
+    },
+    {
+      "name" : "TouchStream Digital Inc.",
+      "logo" : "touchstream.png",
+      "address" : "2001 Atlanta Center Building, 31 Annapolis, San Juan, Metro Manila, Philippines",
+      "phone" : "8-661-4303",
+      "website" : "http://touchstreamdigital.com"
+    },
+    {
+      "name" : "Anastacio L. Products",
+      "logo" : "none",
+      "address" : "220 A.Bonifacio Street, San Juan, Metro Manila, Philippines",
+      "phone" : "+63 2-7241478",
+      "website" : "http://anastaciolproducts.webs.com/"
+    },
+    {
+      "name" : "Brace Dental Clinic",
+      "logo" : "none",
+      "address" : "Unit 8 Lower Ground Flr., Swire Elan Hotel, 49 Annapolis St. San Juan City, 1105, Philippines, San Juan, Metro Manila",
+      "phone" : "(02)3423201",
+      "website" : "http://bracedental.net"
+    },
+    {
+      "name" : "Integrated Computer Systems, Inc.",
+      "logo" : "none",
+      "address" : "3/F Limketkai Building, Ortigas avenue, Greenhills, San Juan, Metro Manila, Philippines",
+      "phone" : "(02) 744-3000",
+      "website" : "http://www.ics.com.ph"
+    }
+  ]
+}

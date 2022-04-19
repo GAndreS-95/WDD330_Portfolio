@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gene Sunglao">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Lesson 4: Assignment: Preston Town Page">
+
+        <title>Preston Town | Weathered Out</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Itim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normlize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        
+    </head>
+
+    <body>
+        <!--Banner-->
+        <div id="banner" class="showme">Saturday = Preston Pancakes in the Park!  
+            9:00 a.m. Saturday at the city park pavilion.
+        </div>
+
+        <!--HEADER-->
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <img src="images/weathered_out_icon.png" alt="Storm Icon">
+                <div class="headings">
+                    <h1>Weathered Out</h1>
+                    <h2>Your handy weather forecaster</h2>
+                </div>
+            </header>
+        </div>
+
+        <!--NAVIGATION-->
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="lesson6/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="lesson8/stormcenter.html">Storm Center</a></li>
+                    <li><a href="lesson7/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--MAIN CONTENT-->
+        <main class="clearfix">
+            <h1>Welcome to Weathered Out</h1>
+
+            <!--Weather Summary-->
+            <div class="weatherSummary">
+                <picture class="photo">
+                    <source media="(max-width: 200px)" srcset="images/wdd230_image_franklinOriginal_200.jpg">
+                    <source media="(max-width: 500px)" srcset="images/wdd230_image_franklinOriginal_500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/wdd230_image_franklinOriginal_800.jpg">
+                    <img src="images/wdd230_image_franklinOriginal_1100.jpg" alt="preston">
+                </picture>
+            </div>
+
+            <!--Articles-->
+            <article class="articles">
+                <h2><em>Some Article</em></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in. Convallis tellus id interdum velit laoreet. Porta lorem mollis aliquam ut porttitor. Purus in massa tempor nec feugiat nisl pretium. Nunc scelerisque viverra mauris in aliquam sem fringilla. Lorem sed risus ultricies tristique nulla aliquet. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Est ultricies integer quis auctor elit sed vulputate. Volutpat blandit aliquam etiam erat. Elementum nisi quis eleifend quam.<br>
+                <br>Erat pellentesque adipiscing commodo elit at imperdiet dui. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Ut faucibus pulvinar elementum integer enim. Nisi lacus sed viverra tellus in hac habitasse. Quam pellentesque nec nam aliquam sem et. Non diam phasellus vestibulum lorem. Magna etiam tempor orci eu lobortis elementum nibh tellus. Tortor aliquam nulla facilisi cras fermentum odio eu. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ac turpis egestas integer eget aliquet nibh praesent tristique. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Est pellentesque elit ullamcorper dignissim cras tincidunt. Commodo sed egestas egestas fringilla phasellus faucibus. Elit sed vulputate mi sit amet mauris commodo quis imperdiet.</p>
+            </article>
+            
+            <!--TOWN INFO / JS-->
+            <article class="towns"></article>
+            
+            <!--Contact Info-->
+            <section class="contact-info">
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="address">
+                        <h3>Address: </h3>
+                        <p>The Weather Center<br>
+                            123 Main Street<br>
+                            Franklin, MI 87654</p>
+                    </div>
+                    <div class="phone">
+                        <h3>Phone: </h3>
+                        <p>(801) 555-1234</p>
+                    </div>
+                    <div class="email">
+                        <h3>Email: </h3>
+                        <p>contact@ yoururl.com</p>
+                    </div>
+                    <div class="mapouter">        
+                        <iframe src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <div id="footerWrapper">
+            <footer>
+                &copy; Gene Sunglao | WDD 230 | Weather Site Project   
+                <div class="date"></div>
+            </footer>
+        </div>
+        <script src="js/towns.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontload.js"></script>
+    </body>
+</html> 

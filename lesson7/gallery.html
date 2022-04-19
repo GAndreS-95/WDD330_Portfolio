@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gene Sunglao">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Lesson 4: Assignment: Preston Town Page">
+
+        <title>Preston Town | Weathered Out</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Itim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normlize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+    <body>
+        <div id="banner" class="showme">Saturday = Preston Pancakes in the Park!  
+            9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <img src="images/weathered_out_icon.png" alt="Storm Icon">
+                <section class="headings">
+                    <h1>Weathered Out</h1>
+                    <h2>Your handy weather forcaster</h2>
+                </section>
+            </header>
+        </div>
+
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="lesson6/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--MAIN START-->
+        <main class="clearfix">
+            <h1>Weather Gallery</h1>
+
+            <div class="gallery">
+                <picture class="pic1">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/city-storm.jpg" 
+                    alt="Weather">
+                    <figcaption>Lightning clouds over the city.</figcaption>
+                </picture>
+
+                <picture class="pic2">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/cloudy-city.jpg" 
+                    alt="Weather">
+                    <figcaption>Gray clouds over apartment buildings.</figcaption>
+                </picture>
+
+                <picture class="pic3">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/cloudy-lightning.jpg" 
+                    alt="Weather">
+                    <figcaption>Rain storm over the city.</figcaption>
+                </picture>
+
+                <picture class="pic4">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/cloudy-sun.jpg" 
+                    alt="Weather">
+                    <figcaption>Sunny day with small cloud cover.</figcaption>
+                </picture>
+
+                <picture class="pic5">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/fog.jpg" 
+                    alt="Weather">
+                    <figcaption>Small fog covered forest</figcaption>
+                </picture>
+
+                <picture class="pic6">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/purple-lightning.png" 
+                    alt="Weather">
+                    <figcaption>Thunder storm at night</figcaption>
+                </picture>
+
+                <picture class="pic7">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/snow.jpg" 
+                    alt="Weather">
+                    <figcaption>Smow covered farm</figcaption>
+                </picture>
+
+                <picture class="pic8">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/sunny.jpg" 
+                    alt="Weather">
+                    <figcaption>Sunny day over the field</figcaption>
+                </picture>
+
+                <picture class="pic9">
+                    <img src="images-gallery/placeholder500.jpg" 
+                    data-src="images-gallery/sunset-cloud.jpg" 
+                    alt="Weather">
+                    <figcaption>Gigantic clouds</figcaption>
+                </picture>
+            </div>            
+        </main>
+        <!--MAIN END-->
+
+
+        <div id="footerWrapper">
+            <footer>
+                &copy; Gene Sunglao | WDD 230 | Weather Site Project   
+                <div class="date"></div>
+            </footer>
+        </div>
+        <script src="js/scripts.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script type="text/javascript" src="js/lazyload.js"></script>
+    </body>
+</html>
