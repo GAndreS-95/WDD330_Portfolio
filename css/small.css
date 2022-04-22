@@ -6,7 +6,7 @@ body {
     background-color: #1A1A1A;
 }
 
-h1, ul {
+h1, ol {
     font-family: 'New Tegomin', serif;
 }
 
@@ -43,11 +43,11 @@ header img {
     margin: 15px;
 }
 
-ul a{
+ol a{
     color: #ff7700;
   }
   /* Link Interactions*/
-ul a:hover {
+ol a:hover {
     background-color: #ff7700;
     color: #333333;
     padding: 5px;
