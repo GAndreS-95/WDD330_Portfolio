@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 3 notes</title>
+    <link rel="stylesheet" href="css/small.css">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <h4><em>Object Literals</em></h4>
+    <p>An object in JavaScript is a self-contained set of related values and functions. They act as a collection of named properties that map to any JavaScript value such as strings, numbers, Booleans, arrays, and even functions. If a property s value is a function, it is known as a <strong>method</strong>.</p>
+    <p>An <strong>object literal</strong> is an object that is created directly in the language by wrapping all its properties and methods in curly braces {}. Object literals are a distinguishing feature of the JavaScript language, as they allow objects to be created quickly without the need for a class template.</p>
+    <p>All objects are mutable at any time when a program is running. This means that its properties and methods can be changed or removed and new properties and methods can be added to the object.</p>
+
+    <h4><em>Accessing Properties</em></h4>
+    <p>You can access the properties of an object using the dot notation. You can also access an object s properties using bracket notation. The property is represented by a string inside square brackets, so needs to be placed inside single or double quotation marks. Dot notation is much more common, but bracket notation has a few advantages: It is the only way to access nonstandard property and method names that don't follow the variable naming rules. It also lets you evaluate an expression and use it as the object key.</p>
+
+    <h4><em>Calling Methods</em></h4>
+    <p>To call an object s method we can also use dot or bracket notation. Calling a method is the same as invoking a function, so parentheses need to be placed after the method name.</p>
+
+    <h4><em>JSON</em></h4>
+    <p>
+        JavaScript Object Notation, or JSON, is a popular lightweight data-storage format that is used for data serialization and configuration. It is often used to exchange information between web services and is employed by sites such as Twitter, Facebook, and Trello to share information. It manages to hit the sweet spot between being both human- and machine-readable. 
+        <br>
+        JSON is a string representation of the object literal notation that we have just seen. There are a few differences, though, such as property names being quoted and not using functions to create methods.
+    </p>
+    <p>
+        JSON is becoming increasingly popular as a data storage format and many programming languages now have libraries dedicated to parsing and generating it. Since ECMAScript 5, there has been a global JSON object that can be used to do the same in JavaScript.
+        <br>
+        The parse method takes a JSON string and returns a JavaScript object.
+        <br>
+        The stringify method does the opposite, taking a JavaScript object and returning a string of JSON data.
+    </p>
+    
+    <h4><em>The Math Object</em></h4>
+    <p>The Math object has several properties that represent mathematical constants and methods. These are used to carry out a number of useful operations. All the properties and methods of the Math object are immutable and unable to be changed.</p>
+
+    <h4><em>Mathematical Constants</em></h4>
+    <p>
+        The Math object has eight properties that represent a mix of commonly used math constants. Note that they are all named in capital letters, which is a convention for constant values:
+        <br>
+        > Math.PI // The ratio of the circumference and diameter of a circle<br>
+        << 3.141592653589793<br>
+        <br>
+        > Math.SQRT2 // The square root of 2<br>
+        << 1.4142135623730951<br>
+        <br>
+        > Math.SQRT1_2 // The reciprocal of the square root of 2<br>
+        << 0.7071067811865476<br>
+        <br>
+        > Math.E // Euler's constant<br>
+        << 2.718281828459045<br>
+        <br>
+        > Math.LN2 // The natural logarithm of 2<br>
+        << 0.6931471805599453<br>
+        <br>
+        > Math.LN10 // The natural logarithm of 10<br>
+        << 2.302585092994046<br>
+        <br>
+        > Math.LOG2E // Log base 2 of Euler's constant<br>
+        << 1.4426950408889634<br>
+        <br>
+        > Math.LOG10E // Log base 10 of Euler's constant<br>
+        << 0.4342944819032518
+    </p>
+
+    <h4><em>Mathematical Operations</em></h4>
+    <p>
+        The Math object also has several methods to carry out a variety of useful mathematical operations.<br>
+
+        The Math.abs() method returns the absolute value of a number. So if the number is positive, it will remain the same and if it is negative, it will become positive:<br>
+        <br>
+        > Math.abs(3);<br>
+        << 3<br>
+        <br>
+        > Math.abs(-4.6);<br>
+        << 4.6<br>
+        <br>
+        The Math.ceil() method will round a number up to the next integer, or remain the same if it is already an integer:<br>
+        <br>
+        > Math.ceil(4.2);<br>
+        << 5<br>
+        <br>
+        > Math.ceil(8);<br>
+        << 8<br>
+        <br>
+        > Math.ceil(-4.2);<br>
+        << -4<br>
+        <br>
+        The Math.floor() method will round a number down to the next integer, or remain the same if it is already an integer:
+
+        > Math.floor(4.2);
+        << 4
+
+        > Math.floor(8);<br>
+        << 8<br>
+        <br>
+        > Math.floor(-4.2);<br>
+        << -5<br>
+        <br>
+        The Math.round() method will round a number to the nearest integer:<br>
+
+        > Math.round(4.5);<br>
+        << 5<br>
+        <br>
+        > Math.round(4.499);<br>
+        << 4<br>
+        <br>
+        > Math.round(-4.2);
+        << -4<br>
+        <br>
+        The Math.exp() method will raise a number to the power of Euler s constant:<br>
+        <br>
+        > Math.exp(1); // This is Euler's constant<br>
+        << 2.718281828459045<br>
+        <br>
+        > Math.exp(0); // Any number to the power of 0 is 1<br>
+        << 1<br>
+        <br>
+        > Math.exp(-3);<br>
+        << 0.04978706836786393<br>
+        <br>
+        The Math.pow() method will raise any number (the first argument) to the power of another number (the second argument):<br>
+        <br>
+        > Math.pow(3,2); // 3 squared<br>
+        << 9<br>
+        <br>
+        > Math.pow(4.5,0); // Any number to the power of 0 is 1
+        << 1<br>
+        <br>
+        > Math.pow(27,1/3); // A nice way to do cube roots<br>
+        <<<br>
+            <br>
+        The Math.sqrt() method returns the positive square root of a number:<br>
+        <br>
+        > Math.sqrt(121);<br>
+        << 11<br>
+        <br>
+        > Math.sqrt(2); // same as Math.SQRT2<br>
+        << 1.4142135623730951<br>
+        <br>
+        > Math.sqrt(-1); // No built in imaginary numbers!<br>
+        << NaN<br>
+        <br>
+        The Math.log() method returns the natural logarithm of a number:<br>
+        <br>
+        > Math.log(Math.E); // Natural logs have a base of Euler's constant<br>
+        << 1
+        <br>
+        > Math.log(1); // log of 1 is zero<br>
+        << 0<br>
+        <br>
+        > Math.log(0); // You can't take the log of zero<br>
+        << -Infinity<br>
+        <br>
+        > Math.log(-2); // You can't take logs of negative numbers<br>
+        << NaN<br>
+        <br>
+        The Math.max() method returns the maximum number from its arguments:<br>
+        <br>
+        > Math.max(1,2,3);<br>
+        << 3<br>
+        <br>
+        > Math.max(Math.PI,Math.SQRT2, Math.E);<br>
+        << 3.141592653589793<br>
+        <br>
+        And the Math.min() method unsurprisinglyreturns the minimum number from the given arguments:<br>
+        <br>
+        > Math.min(1,2,3);<br>
+        << 1<br>
+        <br>
+        > Math.min(Math.PI,Math.SQRT2, Math.E);<br>
+        << 1.4142135623730951<br>
+    </p>
+
+    <h4><em>Trigonometric Functions</em></h4>
+    <p>The Math object also has the standard trigonometric functions, which are very useful when working with geometrical objects. All angles are measured in radians for these functions.</p>
+
+    <h4><em>DOM</em></h4>
+    <p>
+        The <strong>Document Object Model</strong>, or DOM for short, represents an HTML document as a network of connected nodes that form a tree-like structure.
+
+        Everything on a web page is represented by a node. HTML tags, the text inside these tags, and even the attributes of a tag are all nodes. The HTML tag is the root node and every other part of the document is a child node of this.
+    </p>
+
+    <h4><em>Legacy DOM Shortcut Methods</em></h4>
+    <p>There are some methods from DOM Level 0 that can still be employed to access commonly used elements:</p>
+    <ul>
+        <li>document.body returns thebodyelementof a web page, as we saw in the previous example.</li>
+        <li>document.images returns a node listof all the images contained in the document.</li>
+        <li>document.links returns a node list of all the < a > elements and < area > elements that have an href attribute.</li>
+        <li>document.anchors returns a node list of all the < a > elements that have a name attribute.</li>
+        <li>document.forms returns a node list of all the forms in the document.</li>
+    </ul>
+
+    <h4><em>Getting an Element by Its ID</em></h4>`
+    <p>
+        The getElementById() method does exactly what it says on the tin. It returns a reference to the element with a unique id attribute that is given as an argument.
+        <br>
+        Every id attribute should be unique to just one element, so this method will return a reference to that element. For this reason, it's a very quick way of finding elements in a document. It is also supported in all the major browsers. 
+        <br>
+        If no element exists with the given ID, null is returned. 
+    </p>
+
+    <h4><em>Get Elements by Their Class Name</em></h4>
+    <p>getElementsByClassName() will return a live node list of all elements that havethe class name that is supplied as an argument.</p>
+
+    <h4><em>Query Selectors</em></h4>
+    <p>
+        The document.querySelector() method allows you to use CSS notation to find the first element in the document that matches a CSS query selector criteria provided as an argument. If no elements match, it will return null. 
+        <br>
+        The document.querySelectorAll() method also uses CSS notation but returns a node list of all the elements in the document that match the CSS query selector. If no elements match, it will return an empty node list.
+        <br>
+        These are both very powerful methods that can emulate all the methods discussed, as well as allowing more fine-grained control over which element nodes are returned.
+    </p>
+
+    <h4><em>Getting and Setting Attributes</em></h4>
+    <p>All HTML elements have a large number of possible attributes such as class, id, src, and href. The DOM API contains getter and setter methods that can be used to view, add, remove, or modify the value of any of these attributes.</p>
+
+
+</body>
+</html>
