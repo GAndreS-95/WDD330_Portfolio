@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Page Title</title>
-    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/style.css">
     <script>
 
     </script>
@@ -12,7 +12,7 @@
 <body>
     
     
-    <h4><em>Errors, Exceptions, and Warnings</em></h4>
+    <h3><em>Errors, Exceptions, and Warnings</em></h3>
     <p>
         As programmers, we often have little influence over how external systems work, so it can be difficult to fix the root cause of system errors. Despite this, we should still try to catch them and attempt to reduce their impact by working around the problems they cause. Programmer errors are our responsibility, so we must ensure they are minimized as much as possible and fixed promptly. We also should try to limit user errors by predicting any possible interactions that may throw an error, and ensure they are dealt with in a way that doesn't t negatively affect the user expertience.<br>
         <br>
@@ -37,10 +37,10 @@
         When an exception occurs, the HTML will still appear but the JavaScript code will stop working, which isn t always obvious. If a warning occurs, the JavaScript will continue to run (although possibly incorrectly).
     </p>
 
-    <h4><em>Debugging in the browser</em></h4>
+    <h3><em>Debugging in the browser</em></h3>
     <p><strong>Debugging</strong> is the process of finding out where bugs occur in the code and then dealing with them. In many cases, the point at which an error occurs is not always where it originated, so you'll need to run through the program to see what s happening at different stages of its execution. When doing this, it can be useful to create what are known as <strong>breakpoints</strong>, which halt the progress of the code and allow us to view the value of different variables at that point in the program. There are a number of options for debugging JavaScript code in the browser.</p>
 
-    <h4><em>Using the console</em></h4>
+    <h3><em>Using the console</em></h3>
     <p>Most modern browsers have a console object that provides a number of methods for logging information and debugging. It is not part of the official ECMAScript specification, but is well supported in all the major browsers.</p>
     <ul>
         <li>The console.log() method can be used to log the value of variables at different stages of the program, although it will not actually stop executing the program.
@@ -48,7 +48,7 @@
         <li>The console.trace() method will log an interactive stack trace in the console. This will show the functions that were called in the lead up to an exception occurring while the code is running.</li>
     </ul>
 
-    <h4><em>Error Objects</em></h4>
+    <h3><em>Error Objects</em></h3>
     <p>
         An error object can be created by the host environment when an exception occurs, or it can be created in the code using a constructor function, like so:<br>
         <br>
@@ -75,7 +75,7 @@
         <li>The stack property will return a stack trace for that error.</li>
     </ul>
 
-    <h4><em>Test-driven Development</em></h4>
+    <h3><em>Test-driven Development</em></h3>
     <p>Test-driven development (TDD) is the process of writing tests before any code. Obviously, these tests will initially fail, because there is no code. The next step is to write some code so that the tests pass. After this the code is refactored to make it more readable, faster, and remove repetition. This process should be followed in small piecemeal chunks every time a new feature is implemented. It gives the fol lowing workflow:</p>
     <ol>
         <li>write tests (that initially fail)</li>

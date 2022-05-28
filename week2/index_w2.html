@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Week 2 notes</title>
-    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/style.css">
     <script>
 
     </script>
@@ -13,10 +13,10 @@
     <h2>Variables</h2>
     <p><em>Variables store value in memory for specific uses in JavaScript. Use keywords like var, let, and const to use variables. Naming variables can start with any upper/lower case letters, underscores, or dollar symbols. It can contain numbers but can't start w/ them. Variables are also very case sensitive.</em></p>
 
-    <h4><em>Reserved Words</em></h4>
+    <h3><em>Reserved Words</em></h3>
     <p>They are words in JavaScript that are reserved and thus can't be named with such words.</p>
 
-    <h4><em>Assignment</em></h4>
+    <h3><em>Assignment</em></h3>
     <p> Assigning values to a variable is done by using the [ = ] operator. <br>
         We can also declare and initialize a variable at the same time. <br>
         i.e. let name = "Howard";
@@ -34,7 +34,7 @@
     i.e. name.length; <br>
     >>> 10</p>
 
-    <h4><em>Exponential Notation</em></h4>
+    <h3><em>Exponential Notation</em></h3>
     <p>
         i.e. <br>
         <br>
@@ -48,17 +48,17 @@
         << 0.0025
     </p>
 
-    <h4><em>Number Methods</em></h4>
+    <h3><em>Number Methods</em></h3>
     <p>Numbers also have some built-in methods, although you need to be careful when using the dot notation with number literals that are integers because the dot can be confused for a decimal point. [either use two dots, add a space, write the integer as a decimal, or place the integer in parentheses]<br>
     <br>
     'toFixed( )' -  this method rounds a number to a fixed number of decimal places.<br>
     <br>
     'toPrecision( )' - this method rounds a number to a fixed number of significant figures that is returned as a string.</p>
 
-    <h4><em>NaN</em></h4>
+    <h3><em>NaN</em></h3>
     <p>NaN is an error value that is short for "Not a Number". It is used when an operation is attempted and the result is not numerical.</p>
 
-    <h3>Converting strings to numbers & vice versa</h3>
+    <h2>Converting strings to numbers & vice versa</h2>
 
     <h4><em>Strings to Numbers</em></h4>
     <ul>
@@ -81,7 +81,7 @@
         <li>toString( ) method.</li>
     </ul>
 
-    <h4><em>Parsing Numbers</em></h4>
+    <h3><em>Parsing Numbers</em></h3>
     <p>The function parseInt( ) can be used to convert a numerical string into an integer.</p>
 
 
@@ -89,24 +89,24 @@
     <h2>Array Properties and Methods</h2>
     <p><em>Arrays are a powerful weapon in a JavaScript ninja s toolkit and have some useful methods.</em></p>
 
-    <h4><em>Pop, Push, Shift, and Unshift</em></h4>
+    <h3><em>Pop, Push, Shift, and Unshift</em></h3>
     <p>To remove the last item from an array, we can use the pop() method.
         <br>
         The push() method appends a new value to the end of the array.
         <br>
         The unshift() method is similar to the push() method, but this appends a new item to the beginning of the array.</p>
 
-    <h4><em>Merging Arrays</em></h4>
+    <h3><em>Merging Arrays</em></h3>
     <p>The concat() method can be used to merge an array with one or more arrays:
     <br>
     Note that this does not change the array, it simply creates another array combining the two arrays. You can use assignment to change the pizzas array to this new array.</p>
 
-    <h4><em>The join() Method</em></h4>
+    <h3><em>The join() Method</em></h3>
     <p>The join() method can be used to turn the array into a string that comprises all the items in the array, separated by commas.
     <br>
     You can choose a separator other than a comma by placing it inside the parentheses.</p>
     
-    <h4><em>Slicing and Splicing</em></h4>
+    <h3><em>Slicing and Splicing</em></h3>
     <p>The slice() method creates a subarray, effectively chopping out a slice of an original array starting at one index and finishing at the next. </p>
     <p>
         Note that this operation is non-destructive -- no items are actually removed from the array.
@@ -118,17 +118,17 @@
         If you want to remove a value completely, you can use the splice() method with a length of 1 and without specifying any values to add.
     </p>
 
-    <h4><em>Reverse</em></h4>
+    <h3><em>Reverse</em></h3>
     <p>We can reverse the order of an array using the reverse() method.
         <br>
         Note that this changes the order of the array permanently.</p>
 
-    <h4><em>Sort</em></h4>
+    <h3><em>Sort</em></h3>
     <p>We can sort the order of an array using the sort() method:
         <br>
         It is alphabetical order by default for String objects. Note that this also changes the order of the array permanently.</p>
 
-    <h3>Callbacks</h3>
+    <h2>Callbacks</h2>
     <p><em>Remember at the start of this chapter when we said that functions in JavaScript are first-class objects, and this means that they behave in just the same way as every other value? Well, they can also be given as a parameter to another function. A function that is passed as an argument to another is known as a callback.</em></p>
 </body>
 </html>

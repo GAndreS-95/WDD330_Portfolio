@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Week 3 notes</title>
-    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/style.css">
     <script>
 
     </script>
 </head>
 
 <body>
-    <h4><em>Object Literals</em></h4>
+    <h3><em>Object Literals</em></h3>
     <p>An object in JavaScript is a self-contained set of related values and functions. They act as a collection of named properties that map to any JavaScript value such as strings, numbers, Booleans, arrays, and even functions. If a property s value is a function, it is known as a <strong>method</strong>.</p>
     <p>An <strong>object literal</strong> is an object that is created directly in the language by wrapping all its properties and methods in curly braces {}. Object literals are a distinguishing feature of the JavaScript language, as they allow objects to be created quickly without the need for a class template.</p>
     <p>All objects are mutable at any time when a program is running. This means that its properties and methods can be changed or removed and new properties and methods can be added to the object.</p>
 
-    <h4><em>Accessing Properties</em></h4>
+    <h3><em>Accessing Properties</em></h3>
     <p>You can access the properties of an object using the dot notation. You can also access an object s properties using bracket notation. The property is represented by a string inside square brackets, so needs to be placed inside single or double quotation marks. Dot notation is much more common, but bracket notation has a few advantages: It is the only way to access nonstandard property and method names that don't follow the variable naming rules. It also lets you evaluate an expression and use it as the object key.</p>
 
-    <h4><em>Calling Methods</em></h4>
+    <h3><em>Calling Methods</em></h3>
     <p>To call an object s method we can also use dot or bracket notation. Calling a method is the same as invoking a function, so parentheses need to be placed after the method name.</p>
 
-    <h4><em>JSON</em></h4>
+    <h3><em>JSON</em></h3>
     <p>
         JavaScript Object Notation, or JSON, is a popular lightweight data-storage format that is used for data serialization and configuration. It is often used to exchange information between web services and is employed by sites such as Twitter, Facebook, and Trello to share information. It manages to hit the sweet spot between being both human- and machine-readable. 
         <br>
@@ -35,10 +35,10 @@
         The stringify method does the opposite, taking a JavaScript object and returning a string of JSON data.
     </p>
     
-    <h4><em>The Math Object</em></h4>
+    <h3><em>The Math Object</em></h3>
     <p>The Math object has several properties that represent mathematical constants and methods. These are used to carry out a number of useful operations. All the properties and methods of the Math object are immutable and unable to be changed.</p>
 
-    <h4><em>Mathematical Constants</em></h4>
+    <h3><em>Mathematical Constants</em></h3>
     <p>
         The Math object has eight properties that represent a mix of commonly used math constants. Note that they are all named in capital letters, which is a convention for constant values:
         <br>
@@ -67,7 +67,7 @@
         << 0.4342944819032518
     </p>
 
-    <h4><em>Mathematical Operations</em></h4>
+    <h3><em>Mathematical Operations</em></h3>
     <p>
         The Math object also has several methods to carry out a variety of useful mathematical operations.<br>
 
@@ -176,17 +176,17 @@
         << 1.4142135623730951<br>
     </p>
 
-    <h4><em>Trigonometric Functions</em></h4>
+    <h3><em>Trigonometric Functions</em></h3>
     <p>The Math object also has the standard trigonometric functions, which are very useful when working with geometrical objects. All angles are measured in radians for these functions.</p>
 
-    <h4><em>DOM</em></h4>
+    <h3><em>DOM</em></h3>
     <p>
         The <strong>Document Object Model</strong>, or DOM for short, represents an HTML document as a network of connected nodes that form a tree-like structure.
 
         Everything on a web page is represented by a node. HTML tags, the text inside these tags, and even the attributes of a tag are all nodes. The HTML tag is the root node and every other part of the document is a child node of this.
     </p>
 
-    <h4><em>Legacy DOM Shortcut Methods</em></h4>
+    <h3><em>Legacy DOM Shortcut Methods</em></h3>
     <p>There are some methods from DOM Level 0 that can still be employed to access commonly used elements:</p>
     <ul>
         <li>document.body returns thebodyelementof a web page, as we saw in the previous example.</li>
@@ -196,7 +196,7 @@
         <li>document.forms returns a node list of all the forms in the document.</li>
     </ul>
 
-    <h4><em>Getting an Element by Its ID</em></h4>`
+    <h3><em>Getting an Element by Its ID</em></h3>`
     <p>
         The getElementById() method does exactly what it says on the tin. It returns a reference to the element with a unique id attribute that is given as an argument.
         <br>
@@ -205,10 +205,10 @@
         If no element exists with the given ID, null is returned. 
     </p>
 
-    <h4><em>Get Elements by Their Class Name</em></h4>
+    <h3><em>Get Elements by Their Class Name</em></h3>
     <p>getElementsByClassName() will return a live node list of all elements that havethe class name that is supplied as an argument.</p>
 
-    <h4><em>Query Selectors</em></h4>
+    <h3><em>Query Selectors</em></h3>
     <p>
         The document.querySelector() method allows you to use CSS notation to find the first element in the document that matches a CSS query selector criteria provided as an argument. If no elements match, it will return null. 
         <br>
@@ -217,7 +217,7 @@
         These are both very powerful methods that can emulate all the methods discussed, as well as allowing more fine-grained control over which element nodes are returned.
     </p>
 
-    <h4><em>Getting and Setting Attributes</em></h4>
+    <h3><em>Getting and Setting Attributes</em></h3>
     <p>All HTML elements have a large number of possible attributes such as class, id, src, and href. The DOM API contains getter and setter methods that can be used to view, add, remove, or modify the value of any of these attributes.</p>
 
 
